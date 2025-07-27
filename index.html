@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- REMIX ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link href="assets/css/output.css" rel="stylesheet" />
+    <title>Plant Website</title>
+  </head>
+  <body class="">
+    <!-- HEADER -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 z-50 flex w-full justify-center bg-green-950"
+    >
+      <nav class="container flex h-16 items-center justify-between sm:h-20">
+        <div class="font-lobster sm:text-2xl">IndorePlants.</div>
+
+        <div
+          id="nav-menu"
+          class="absolute top-0 left-[-100%] flex min-h-[80vh] w-full items-center justify-center overflow-hidden bg-green-950/80 backdrop-blur-sm duration-300 lg:static lg:mx-auto lg:min-h-fit lg:w-auto lg:bg-transparent"
+        >
+          <ul class="flex flex-col items-center gap-8 lg:flex-row">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#popular" class="nav-link">Popular</a></li>
+            <li><a href="#review" class="nav-link">Review</a></li>
+          </ul>
+
+          <div>
+            <img
+              src="assets/img/leaf-1.png"
+              alt="leaf-image"
+              class="absolute -right-10 bottom-0 w-32 opacity-90 lg:hidden"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/img/leaf-2.png"
+              alt="leaf-image"
+              class="absolute -top-5 -left-5 w-32 rotate-90 opacity-90 lg:hidden"
+            />
+          </div>
+        </div>
+
+        <div class="z-50 cursor-pointer text-xl sm:text-3xl lg:hidden">
+          <i class="ri-menu-4-line" id="hamburger"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="flex w-full justify-center">
+      <div class="container">
+        <div class="flex flex-col items-center gap-5 lg:flex-row">
+          <!-- content -->
+          <div class="w-full space-y-5 lg:w-1/2">
+            <h1>
+              <span class="text-yellow-500">Plants</span> make a <br />positive
+              <span class="text-yellow-500">impact</span> on <br />
+              your environment
+            </h1>
+            <p class="font-lobster text-slate-300">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+              dignissimos aliquam neque ipsam perferendis sint amet beatae eos
+              asperiores libero nisi, minima, veritatis ducimus consequuntur.
+            </p>
+
+            <div class="flex flex-col gap-2 sm:flex-row">
+              <button class="btn">
+                <span>Shop Now</span>
+                <i class="ri-leaf-line"></i>
+              </button>
+              <button class="btn btn_outline">
+                <span>Know More</span>
+                <i class="ri-leaf-line"></i>
+              </button>
+            </div>
+
+            <p class="font-lobster text-xs text-slate-300">
+              You will get 30-days free trial.
+            </p>
+            <!-- button -->
+            <div class="flex items-center gap-5 text-lg">
+              <i
+                class="ri-facebook-fill cursor-pointer text-slate-300 duration-300 hover:text-yellow-500"
+              ></i>
+              <i
+                class="ri-twitter-x-line cursor-pointer text-base text-slate-300 duration-300 hover:text-yellow-500"
+              ></i>
+              <i
+                class="ri-instagram-line cursor-pointer text-slate-300 duration-300 hover:text-yellow-500"
+              ></i>
+              <i
+                class="ri-linkedin-line cursor-pointer text-slate-300 duration-300 hover:text-yellow-500"
+              ></i>
+            </div>
+          </div>
+
+          <!-- image -->
+          <div class="relative w-full lg:w-1/2">
+            <img src="assets/img/home.png" alt="home_image" />
+
+            <!-- plant -->
+            <div class="absolute -top-10 right-0 opacity-30">
+              <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+            </div>
+            <div class="absolute bottom-0 left-0 opacity-30">
+              <i class="ri-flower-line text-6xl text-yellow-500"></i>
+            </div>
+            <div class="absolute -top-10 -left-5 hidden opacity-30">
+              <i class="ri-plant-line text-6xl text-yellow-500"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
