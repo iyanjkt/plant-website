@@ -62,6 +62,7 @@ h3{
 .container {
     @apply lg:mx-10 md:mx-8 sm:mx-6 max-sm:mx-4
 }
+
 .nav-link {
     @apply text-lg font-bold duration-300;
     &:hover {
@@ -69,6 +70,9 @@ h3{
     }
     &:focus {
     @apply text-yellow-400 outline-0
+    }
+    &:active {
+    @apply text-yellow-600
     }
 }
 
@@ -81,7 +85,7 @@ h3{
 }
 
 .btn:hover{
-    @apply opacity-80
+    @apply opacity-80 scale-105
 }
 
 .btn_outline {
@@ -93,4 +97,12 @@ h3{
 
 .title{
     @apply font-lobster text-yellow-500
+}
+
+.popular__card:hover img {
+    @apply -top-8
+}
+
+.swiper-pagination-bullet {
+    @apply bg-green-500 w-3 h-3
 }
